@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+  <meta charset="utf-8">
+  <title>対局室</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <% if (!username) { %>
+    <div id="login"><div class="container"><a href="/signin">ログイン</a></div></div>
+  <% } else { %>
+    <div id="user"><div class="container"><%= username %> : <%= rating %></div></div>
+  <% } %>
+  <main>
+    <div id="stand_a" class="stand"></div>
+    <div id="board"></div>
+    <div id="stand_b" class="stand"></div>
+
+    <div id="clock_a" class="clock">05:00</div>
+    <div id="clock_b" class="clock">05:00</div>
+    <div id="resignation" class="hidden">投了</div>
+  </main>
+  <div id="information" class="information"></div>
+
+  <div class="container">
+    <div class="control">
+      <i class="fas fa-volume-mute hidden"></i>
+      <i class="fas fa-volume-down"></i>
+      <i class="fas fa-volume-up hidden"></i>
+      <input id="volume" type="range" value="10" min="0" max="100" step="1">
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script src="js/audio.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+</html>

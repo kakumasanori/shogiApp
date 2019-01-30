@@ -1,0 +1,17 @@
+main {
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  border: 1px solid #aaa;
+  position: relative;
+}
+#color, #frame, #effect, #active, #choice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #aaa;
+}
+.hidden {
+  display: none;
+}

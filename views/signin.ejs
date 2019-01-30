@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ログイン</title>
+</head>
+<body>
+  <h1>ログイン</h1>
+  <form action="/signin" method="post">
+    <p>ユーザー名: <input type="text" name="name" maxlength="8" /></p>
+    <p>パスワード: <input type="password" name="pass" maxlength="8" /></p>
+    <p><%= message %></p>
+    <p><input type="submit" value="ログイン" /></p>
+    <p><a href="/signup">新規登録する</a></p>
+  </form>
+</body>
+</html>
