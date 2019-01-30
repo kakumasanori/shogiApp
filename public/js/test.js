@@ -1,5 +1,5 @@
 (() => {
-  // test2
+  // test3
   'use strict';
   // 色の描画
   const color = document.getElementById('color');
