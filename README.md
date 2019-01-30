@@ -1,7 +1,7 @@
 # shogiApp
 javascript practice
 
-main file
+### main file
 - app.js
 - public / js / main.js
 - public / js / test.js (in development)
