@@ -7,10 +7,6 @@
   <style>
     body {
       margin: 0px;
-<<<<<<< HEAD
-      padding: 0px;
-=======
->>>>>>> hogehoge
     }
     h1 {
       margin: 0;
