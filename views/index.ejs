@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>将棋部屋</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/lobby.css">
+</head>
+<body>
+  <% if (!username) { %>
+    <div id="login"><div class="container"><a href="/signin">ログイン</a></div></div>
+  <% } else { %>
+    <div id="logout"><div class="container"><a href="/signout">ログアウト</a></div></div>
+  <% } %>
+  <main>
+    <h1>将棋部屋</h1>
+    <p><i class="fas fa-user player1 hidden"></i><a href="/room1">対局室1</a><i class="fas fa-user player2 hidden"></i></p>
+    <p><i class="fas fa-user player1 hidden"></i><a href="/room2">対局室2</a><i class="fas fa-user player2 hidden"></i></p>
+    <p><i class="fas fa-user player1 hidden"></i><a href="/room3">対局室3</a><i class="fas fa-user player2 hidden"></i></p>
+    <p><i class="fas fa-user player1 hidden"></i><a href="/room4">対局室4</a><i class="fas fa-user player2 hidden"></i></p>
+    <p><i class="fas fa-user player1 hidden"></i><a href="/room5">対局室5</a><i class="fas fa-user player2 hidden"></i></p>
+    <p><i class="fas fa-user player1 hidden"></i><a href="/room6">テスト</a><i class="fas fa-user player2 hidden"></i></p>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/lobby.js"></script>
+</body>
+</html>

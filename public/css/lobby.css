@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+#login, #logout {
+  text-align: center;
+}
+#login {
+  background: yellow;
+}
+#logout {
+  background: lightgreen;
+}
+.container {
+  margin: auto;
+  width: 900px;
+}
+main {
+  margin: auto;
+  width: 900px;
+  padding: 60px 0;
+  background: #eee;
+  text-align: center;
+}
+main h1 {
+  margin: 0;
+  color: darkgreen;
+}
+main p {
+  margin-top: 30px;
+}
+main i {
+  margin: 0 5px;
+}
+main a {
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+}
+main a:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}
+.player1 {
+  color: skyblue;
+}
+.player2 {
+  color: tomato;
+}
+.hidden {
+  opacity: 0;
+}
