@@ -1,0 +1,2 @@
+# shogiApp
+javascript practice
