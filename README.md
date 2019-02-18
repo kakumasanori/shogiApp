@@ -1,5 +1,5 @@
 # Shogi App
-javascript practice
+JavaScript practice
 
 ### Main File
 - app.js
